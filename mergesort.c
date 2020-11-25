@@ -8,7 +8,7 @@
 void merge(int* a, int, int);
 
 clock_t start,end;
-double cpu_time;
+
 
 int main(void)
 {
@@ -27,7 +27,7 @@ int main(void)
 
     
         printf("Введите количество чисел:");
-        scanf("%d", &qw);
+        scanf_s("%d", &qw);
     
   
         mass = (int*)malloc(qw * sizeof(int));
@@ -36,7 +36,7 @@ int main(void)
         for(n = 0; n < qw; n++)
         {
             printf("Введите числа:");
-            scanf("%d", &mass[n]);
+            scanf_s("%d", &mass[n]);
         }
 
         merge(mass, 0 , qw - 1);
@@ -57,7 +57,7 @@ int main(void)
         int q;
 
         printf("Введите количество чисел:");
-        scanf("%d", &q);
+        scanf_s("%d", &q);
 
         srand(time(NULL));
 
