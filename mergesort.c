@@ -4,7 +4,7 @@
 #include <time.h>
 #define __STDC_WANT_LIB_EXT1__ 1
 
-
+//exit(100) - ошибка ввода 
 
 
 void merge(int* a, int, int);
@@ -17,7 +17,7 @@ int main(void)
     system("chcp 65001");
     system("RUS");
     int k;
-    //clock_t start, end;
+    
 
     printf("-------MergeSort Realization-------\n");
     printf("Выберите способ задания чисел\n1)Свои числа\n2)Рандомные числа\n->");
@@ -82,6 +82,9 @@ int main(void)
         printf("\n\ntime : %.15f ms", (float)(end - begin)/ CLOCKS_PER_SEC);
         free(arr);
 
+    }
+    else{
+        exit(100);
     }
 
     return 0;
