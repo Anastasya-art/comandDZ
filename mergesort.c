@@ -14,8 +14,9 @@ clock_t start, end;
 
 int main(void)
 {
-    system("chcp 65001");
-    system("RUS");
+    int* mass;
+    int* arr;
+    int qw, n, q;
     int k;
     
 
@@ -25,10 +26,7 @@ int main(void)
 
     if (k == 1)
     {
-        int* mass;
-        int qw, n;
-
-
+       
         printf("Введите количество чисел:");
         scanf_s("%d", &qw);
 
@@ -55,9 +53,6 @@ int main(void)
 
     if (k == 2)
     {
-
-        int* arr;
-        int q;
 
         printf("Введите количество чисел:");
         scanf_s("%d", &q);
