@@ -15,7 +15,8 @@ clock_t start, end;
 int main(void)
 {
     int* mass;
-    int qw, n;
+    long int qw;
+    int n;
     int k;
     
 
