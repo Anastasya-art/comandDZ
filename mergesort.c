@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include <time.h>
-#define __STDC_WANT_LIB_EXT1__ 1
+#define _CRT_SECURE_NO_WARNINGS
 
 //exit(100) - ошибка ввода 
 
