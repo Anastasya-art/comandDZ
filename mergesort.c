@@ -15,8 +15,7 @@ clock_t start, end;
 int main(void)
 {
     int* mass;
-    int* arr;
-    int qw, n, q;
+    int qw, n;
     int k;
     
 
@@ -55,27 +54,27 @@ int main(void)
     {
 
         printf("Введите количество чисел:");
-        scanf_s("%d", &q);
+        scanf_s("%d", &qw);
 
         srand(time(NULL));
 
-        arr = (int*)malloc(q * sizeof(int));
+        mass = (int*)malloc(qw * sizeof(int));
 
-        for (int l = 0; l < q; l++)
+        for (int l = 0; l < qw; l++)
         {
-            arr[l] = rand() % 1000000001;
+            mass[l] = rand() % 1000000001;
         }
         clock_t begin = clock();
-        merge(arr, 0, q - 1);
+        merge(mass, 0, qw - 1);
         clock_t end = clock();
 
-        for (int i = 0; i < q; i++)
+        for (int i = 0; i < qw; i++)
         {
-            printf("%d ", arr[i]);
+            printf("%d ", mass[i]);
         }
 
         printf("\n\ntime : %.15f ms", (float)(end - begin)/ CLOCKS_PER_SEC);
-        free(arr);
+        free(mass);
 
     }
     else{
